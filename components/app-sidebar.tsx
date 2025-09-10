@@ -132,15 +132,15 @@ export function AppSidebar() {
               >
                 <DropdownMenuItem>
                   <User2 />
-                  Account
+                  Cuenta
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Settings />
-                  Settings
+                  Configuración
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Inbox />
-                  Support
+                  Soporte
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
