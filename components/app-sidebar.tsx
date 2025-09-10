@@ -1,12 +1,11 @@
 "use client"
 
+import Link from "next/link"
 import {
   BarChart3,
-  Calendar,
   ChevronUp,
   Home,
   Inbox,
-  Search,
   Settings,
   User2,
   Users,
@@ -74,7 +73,7 @@ export function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <a href="/">
+              <Link href="/">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
                   <BarChart3 className="size-4" />
                 </div>
@@ -82,7 +81,7 @@ export function AppSidebar() {
                   <span className="truncate font-semibold">ESCOTEL</span>
                   {/* <span className="truncate text-xs">Plataforma de Gestión</span> */}
                 </div>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
@@ -96,10 +95,10 @@ export function AppSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <Link href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

@@ -11,7 +11,6 @@ import { ChartBarStacked } from "./chart-bar-stacked"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
