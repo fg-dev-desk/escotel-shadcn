@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dashboard App - Analytics Platform",
+  title: "ESCOTEL Analytics",
   description: "Modern analytics dashboard built with Next.js, shadcn/ui, and Tailwind CSS",
 };
 
