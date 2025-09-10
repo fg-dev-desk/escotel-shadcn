@@ -1,6 +1,13 @@
 "use client"
 
 import ChartBarInteractiveNeobrutalism from "../chart-bar-interactive"
+import { ChartBarActiveNeobrutalism } from "../charts/chart-bar-active"
+import { ChartAreaNeobrutalism } from "../charts/chart-area"
+import { ChartLineNeobrutalism } from "../charts/chart-line"
+import { ChartPieNeobrutalism } from "../charts/chart-pie"
+import { ChartRadialNeobrutalism } from "../charts/chart-radial"
+import { ChartBarMultipleNeobrutalism } from "../charts/chart-bar-multiple"
+import { ChartBarStackedNeobrutalism } from "../charts/chart-bar-stacked"
 
 import {
   Card,
@@ -140,8 +147,19 @@ export function DashboardNeobrutalism() {
         </div>
         
         {/* Charts Grid */}
+        <div className="grid gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-2">
+          <ChartBarActiveNeobrutalism />
+          <ChartAreaNeobrutalism />
+          <ChartLineNeobrutalism />
+          <ChartPieNeobrutalism />
+          <ChartRadialNeobrutalism />
+          <ChartBarMultipleNeobrutalism />
+        </div>
+        
+        {/* Full width charts */}
         <div className="grid gap-4 lg:gap-6">
           <ChartBarInteractiveNeobrutalism />
+          <ChartBarStackedNeobrutalism />
         </div>
       </div>
     </div>
