@@ -12,17 +12,17 @@ import {
 export function DashboardNeobrutalism() {
   return (
     <div className="flex-1 space-y-8 p-4 md:p-8 pt-6 bg-yellow-300 min-h-screen">
-      <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-5xl font-black tracking-tight text-black transform -rotate-1">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-4 lg:space-y-2">
+        <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-black transform -rotate-1">
           PANEL DE CONTROL
         </h2>
-        <p className="text-black font-bold text-lg bg-white px-4 py-2 border-4 border-black transform rotate-1">
+        <p className="text-black font-bold text-sm lg:text-lg bg-white px-3 lg:px-4 py-2 border-4 border-black transform rotate-1">
           Monitoreo y análisis de métricas empresariales en tiempo real
         </p>
       </div>
       <div className="space-y-8">
         {/* Stats Cards */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 lg:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-black uppercase tracking-wider">
@@ -140,7 +140,7 @@ export function DashboardNeobrutalism() {
         </div>
         
         {/* Charts Grid */}
-        <div className="grid gap-6 md:grid-cols-1">
+        <div className="grid gap-4 lg:gap-6">
           <ChartBarInteractiveNeobrutalism />
         </div>
       </div>

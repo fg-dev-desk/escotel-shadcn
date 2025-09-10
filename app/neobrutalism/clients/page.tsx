@@ -1,5 +1,4 @@
-import { SidebarNeobrutalism } from "@/neobrutalism/components/sidebar"
-import { HeaderNeobrutalism } from "@/neobrutalism/components/header"
+import { NeobrutalistLayout } from "@/neobrutalism/components/layout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/neobrutalism/components/card"
 import { Button } from "@/neobrutalism/components/button"
 import { Users, UserPlus, Search, Phone, Mail } from "lucide-react"
@@ -13,11 +12,8 @@ export default function ClientsPage() {
   ]
 
   return (
-    <div className="flex min-h-screen bg-purple-300">
-      <SidebarNeobrutalism />
-      <div className="flex-1 flex flex-col">
-        <HeaderNeobrutalism />
-        <div className="flex-1 p-8 bg-purple-300">
+    <NeobrutalistLayout bgColor="bg-purple-300">
+      <div className="flex-1 p-4 lg:p-8 bg-purple-300">
           <div className="mb-8">
             <h1 className="text-6xl font-black text-black transform -rotate-1 mb-4">
               GESTIÓN DE CLIENTES
@@ -132,7 +128,6 @@ export default function ClientsPage() {
             </CardContent>
           </Card>
         </div>
-      </div>
-    </div>
+    </NeobrutalistLayout>
   )
 }

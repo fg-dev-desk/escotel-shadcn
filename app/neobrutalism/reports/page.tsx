@@ -1,5 +1,4 @@
-import { SidebarNeobrutalism } from "@/neobrutalism/components/sidebar"
-import { HeaderNeobrutalism } from "@/neobrutalism/components/header"
+import { NeobrutalistLayout } from "@/neobrutalism/components/layout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/neobrutalism/components/card"
 import { Button } from "@/neobrutalism/components/button"
 import { FileText, Download, Calendar, Filter } from "lucide-react"
@@ -13,11 +12,8 @@ export default function ReportsPage() {
   ]
 
   return (
-    <div className="flex min-h-screen bg-orange-300">
-      <SidebarNeobrutalism />
-      <div className="flex-1 flex flex-col">
-        <HeaderNeobrutalism />
-        <div className="flex-1 p-8 bg-orange-300">
+    <NeobrutalistLayout bgColor="bg-orange-300">
+      <div className="flex-1 p-4 lg:p-8 bg-orange-300">
           <div className="mb-8">
             <h1 className="text-6xl font-black text-black transform -rotate-1 mb-4">
               REPORTES
@@ -119,7 +115,6 @@ export default function ReportsPage() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    </NeobrutalistLayout>
   )
 }

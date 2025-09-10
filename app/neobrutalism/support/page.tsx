@@ -1,5 +1,4 @@
-import { SidebarNeobrutalism } from "@/neobrutalism/components/sidebar"
-import { HeaderNeobrutalism } from "@/neobrutalism/components/header"
+import { NeobrutalistLayout } from "@/neobrutalism/components/layout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/neobrutalism/components/card"
 import { Button } from "@/neobrutalism/components/button"
 import { MessageSquare, Clock, CheckCircle, AlertTriangle, Plus, User } from "lucide-react"
@@ -13,11 +12,8 @@ export default function SupportPage() {
   ]
 
   return (
-    <div className="flex min-h-screen bg-red-300">
-      <SidebarNeobrutalism />
-      <div className="flex-1 flex flex-col">
-        <HeaderNeobrutalism />
-        <div className="flex-1 p-8 bg-red-300">
+    <NeobrutalistLayout bgColor="bg-red-300">
+      <div className="flex-1 p-4 lg:p-8 bg-red-300">
           <div className="mb-8">
             <h1 className="text-6xl font-black text-black transform -rotate-1 mb-4">
               SOPORTE TÉCNICO
@@ -146,7 +142,6 @@ export default function SupportPage() {
             </CardContent>
           </Card>
         </div>
-      </div>
-    </div>
+    </NeobrutalistLayout>
   )
 }

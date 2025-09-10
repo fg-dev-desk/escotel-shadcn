@@ -48,20 +48,24 @@ const items = [
   },
 ]
 
-export function SidebarNeobrutalism() {
+export function SidebarNeobrutalism({ isOpen = true, onClose }: { isOpen?: boolean; onClose?: () => void }) {
   return (
-    <div className="w-80 bg-pink-400 border-r-8 border-black min-h-screen p-6 shadow-[8px_0px_0px_0px_rgba(0,0,0,1)]">
+    <div className={`
+      fixed lg:static inset-y-0 left-0 z-50 transform transition-transform duration-300 ease-in-out
+      ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+      w-80 lg:w-80 bg-pink-400 border-r-8 border-black min-h-screen p-4 lg:p-6 shadow-[8px_0px_0px_0px_rgba(0,0,0,1)]
+    `}>
       {/* Header */}
       <div className="mb-8">
         <Link href="/neobrutalism" className="group">
           <div className="bg-white border-4 border-black rounded-none p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
             <div className="flex items-center gap-3">
-              <div className="flex aspect-square size-12 items-center justify-center rounded-none bg-black text-white border-2 border-black">
-                <BarChart3 className="size-6" strokeWidth={3} />
+              <div className="flex aspect-square size-10 lg:size-12 items-center justify-center rounded-none bg-black text-white border-2 border-black">
+                <BarChart3 className="size-5 lg:size-6" strokeWidth={3} />
               </div>
               <div className="grid flex-1 text-left">
-                <span className="font-black text-2xl tracking-tight text-black">ESCOTEL</span>
-                <span className="font-bold text-sm text-gray-700 uppercase tracking-wider">ANALYTICS</span>
+                <span className="font-black text-xl lg:text-2xl tracking-tight text-black">ESCOTEL</span>
+                <span className="font-bold text-xs lg:text-sm text-gray-700 uppercase tracking-wider">ANALYTICS</span>
               </div>
             </div>
           </div>

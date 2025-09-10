@@ -1,16 +1,12 @@
-import { SidebarNeobrutalism } from "@/neobrutalism/components/sidebar"
-import { HeaderNeobrutalism } from "@/neobrutalism/components/header"
+import { NeobrutalistLayout } from "@/neobrutalism/components/layout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/neobrutalism/components/card"
 import { Button } from "@/neobrutalism/components/button"
 import { Settings, User, Shield, Bell, Database, Palette } from "lucide-react"
 
 export default function SettingsPage() {
   return (
-    <div className="flex min-h-screen bg-teal-300">
-      <SidebarNeobrutalism />
-      <div className="flex-1 flex flex-col">
-        <HeaderNeobrutalism />
-        <div className="flex-1 p-8 bg-teal-300">
+    <NeobrutalistLayout bgColor="bg-teal-300">
+      <div className="flex-1 p-4 lg:p-8 bg-teal-300">
           <div className="mb-8">
             <h1 className="text-6xl font-black text-black transform -rotate-1 mb-4">
               CONFIGURACIÓN
@@ -172,7 +168,6 @@ export default function SettingsPage() {
             </Card>
           </div>
         </div>
-      </div>
-    </div>
+    </NeobrutalistLayout>
   )
 }

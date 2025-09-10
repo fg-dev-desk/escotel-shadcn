@@ -3,18 +3,18 @@
 import { Button } from "./button"
 import { Menu, Sun, Moon } from "lucide-react"
 
-export function HeaderNeobrutalism() {
+export function HeaderNeobrutalism({ onMenuClick }: { onMenuClick?: () => void }) {
   return (
     <header className="bg-cyan-400 border-b-8 border-black p-4 shadow-[0px_8px_0px_0px_rgba(0,0,0,1)]">
       <div className="flex items-center justify-between">
         {/* Left side - Breadcrumb */}
         <div className="flex items-center gap-4">
-          <Button variant="outline" size="icon" className="lg:hidden">
+          <Button variant="outline" size="icon" className="lg:hidden" onClick={onMenuClick}>
             <Menu className="size-4" strokeWidth={3} />
           </Button>
           
-          <div className="bg-white border-4 border-black rounded-none px-4 py-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-            <div className="flex items-center gap-2 text-sm font-bold">
+          <div className="bg-white border-4 border-black rounded-none px-2 lg:px-4 py-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            <div className="flex items-center gap-2 text-xs lg:text-sm font-bold">
               <span className="text-gray-600 uppercase tracking-wider hidden md:block">
                 Plataforma Empresarial
               </span>
@@ -33,8 +33,8 @@ export function HeaderNeobrutalism() {
             <Moon className="absolute size-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" strokeWidth={3} />
           </Button>
           
-          <div className="bg-white border-4 border-black rounded-none px-3 py-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-            <span className="font-black text-black text-sm uppercase tracking-wider">
+          <div className="bg-white border-4 border-black rounded-none px-2 lg:px-3 py-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            <span className="font-black text-black text-xs lg:text-sm uppercase tracking-wider">
               ESCOTEL ANALYTICS
             </span>
           </div>
