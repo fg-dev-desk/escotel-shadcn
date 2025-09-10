@@ -237,7 +237,7 @@ export default function ChartBarInteractiveNeobrutalism() {
             />
             <Bar 
               dataKey={activeChart} 
-              fill={chartConfig[activeChart].color}
+              fill={activeChart === "desktop" ? "#3b82f6" : "#f59e0b"}
               radius={[0, 0, 0, 0]}
               stroke="#000000"
               strokeWidth={3}

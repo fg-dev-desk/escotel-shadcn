@@ -2,7 +2,7 @@ import { SidebarNeobrutalism } from "@/neobrutalism/components/sidebar"
 import { HeaderNeobrutalism } from "@/neobrutalism/components/header"
 import { Card, CardContent, CardHeader, CardTitle } from "@/neobrutalism/components/card"
 import { Button } from "@/neobrutalism/components/button"
-import { TrendingUp, TrendingDown, BarChart3, PieChart } from "lucide-react"
+import { TrendingUp, BarChart3, PieChart } from "lucide-react"
 
 export default function AnalyticsPage() {
   return (

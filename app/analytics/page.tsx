@@ -3,7 +3,7 @@ import { AppSidebar } from "@/components/app-sidebar"
 import { Header } from "@/components/header"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { TrendingUp, TrendingDown, BarChart3, PieChart } from "lucide-react"
+import { TrendingUp, BarChart3, PieChart } from "lucide-react"
 
 export default function AnalyticsPage() {
   return (
