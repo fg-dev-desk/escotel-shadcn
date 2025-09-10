@@ -21,12 +21,12 @@ import {
 export const description = "A stacked bar chart"
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80, tablet: 20 },
-  { month: "February", desktop: 305, mobile: 200, tablet: 40 },
-  { month: "March", desktop: 237, mobile: 120, tablet: 30 },
-  { month: "April", desktop: 73, mobile: 190, tablet: 25 },
-  { month: "May", desktop: 209, mobile: 130, tablet: 35 },
-  { month: "June", desktop: 214, mobile: 140, tablet: 45 },
+  { month: "Enero", desktop: 186, mobile: 80, tablet: 20 },
+  { month: "Febrero", desktop: 305, mobile: 200, tablet: 40 },
+  { month: "Marzo", desktop: 237, mobile: 120, tablet: 30 },
+  { month: "Abril", desktop: 73, mobile: 190, tablet: 25 },
+  { month: "Mayo", desktop: 209, mobile: 130, tablet: 35 },
+  { month: "Junio", desktop: 214, mobile: 140, tablet: 45 },
 ]
 
 const chartConfig = {
@@ -48,8 +48,8 @@ export function ChartBarStacked() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Bar Chart - Stacked</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Gráfico de Barras - Apilado</CardTitle>
+        <CardDescription>Enero - Junio 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -89,10 +89,10 @@ export function ChartBarStacked() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Crecimiento del 5.2% este mes <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          Mostrando total de visitantes de los últimos 6 meses
         </div>
       </CardFooter>
     </Card>

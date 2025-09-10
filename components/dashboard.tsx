@@ -20,7 +20,8 @@ export function Dashboard() {
   return (
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Panel de Control</h2>
+        <p className="text-muted-foreground">Monitoreo y análisis de métricas empresariales en tiempo real</p>
       </div>
       <div className="space-y-4">
         {/* Stats Cards */}
@@ -28,7 +29,7 @@ export function Dashboard() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
-                Total Revenue
+                Ingresos Totales
               </CardTitle>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,16 +45,16 @@ export function Dashboard() {
               </svg>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">$45,231.89</div>
+              <div className="text-2xl font-bold">$1,245,892.00</div>
               <p className="text-xs text-muted-foreground">
-                +20.1% from last month
+                +12.4% respecto al mes anterior
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
-                Subscriptions
+                Clientes Activos
               </CardTitle>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,15 +72,15 @@ export function Dashboard() {
               </svg>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+2350</div>
+              <div className="text-2xl font-bold">8,425</div>
               <p className="text-xs text-muted-foreground">
-                +180.1% from last month
+                +8.2% respecto al mes anterior
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Sales</CardTitle>
+              <CardTitle className="text-sm font-medium">Servicios Contratados</CardTitle>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -95,15 +96,15 @@ export function Dashboard() {
               </svg>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+12,234</div>
+              <div className="text-2xl font-bold">15,680</div>
               <p className="text-xs text-muted-foreground">
-                +19% from last month
+                +15.7% respecto al mes anterior
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Active Now</CardTitle>
+              <CardTitle className="text-sm font-medium">Usuarios en Línea</CardTitle>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -118,9 +119,9 @@ export function Dashboard() {
               </svg>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+573</div>
+              <div className="text-2xl font-bold">1,247</div>
               <p className="text-xs text-muted-foreground">
-                +201 since last hour
+                +89 en la última hora
               </p>
             </CardContent>
           </Card>

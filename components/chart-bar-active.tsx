@@ -57,8 +57,8 @@ export function ChartBarActive() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Bar Chart - Active</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Gráfico de Barras - Activo</CardTitle>
+        <CardDescription>Enero - Junio 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -93,10 +93,10 @@ export function ChartBarActive() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 leading-none font-medium">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Crecimiento del 5.2% este mes <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">
-          Showing total visitors for the last 6 months
+          Mostrando total de visitantes de los últimos 6 meses
         </div>
       </CardFooter>
     </Card>

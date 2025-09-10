@@ -36,32 +36,32 @@ import {
 // Menu items
 const items = [
   {
-    title: "Dashboard",
+    title: "Panel de Control",
     url: "/",
     icon: Home,
   },
   {
-    title: "Analytics",
+    title: "Análisis de Datos",
     url: "/analytics",
     icon: BarChart3,
   },
   {
-    title: "Reports",
+    title: "Reportes",
     url: "/reports",
     icon: PieChart,
   },
   {
-    title: "Calendar",
-    url: "/calendar",
-    icon: Calendar,
+    title: "Gestión de Clientes",
+    url: "/clients",
+    icon: Users,
   },
   {
-    title: "Search",
-    url: "/search",
-    icon: Search,
+    title: "Soporte Técnico",
+    url: "/support",
+    icon: Inbox,
   },
   {
-    title: "Settings",
+    title: "Configuración",
     url: "/settings",
     icon: Settings,
   },
@@ -79,8 +79,8 @@ export function AppSidebar() {
                   <BarChart3 className="size-4" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">Dashboard App</span>
-                  <span className="truncate text-xs">Analytics Platform</span>
+                  <span className="truncate font-semibold">ESCOTEL</span>
+                  {/* <span className="truncate text-xs">Plataforma de Gestión</span> */}
                 </div>
               </a>
             </SidebarMenuButton>
@@ -90,7 +90,7 @@ export function AppSidebar() {
 
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>Navegación</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
@@ -119,8 +119,8 @@ export function AppSidebar() {
                 >
                   <User2 className="size-4" />
                   <div className="grid flex-1 text-left text-sm leading-tight">
-                    <span className="truncate font-semibold">John Doe</span>
-                    <span className="truncate text-xs">john@example.com</span>
+                    <span className="truncate font-semibold">Luis Felipe</span>
+                    <span className="truncate text-xs">luis.fernandez@blackrock.com</span>
                   </div>
                   <ChevronUp className="ml-auto size-4" />
                 </SidebarMenuButton>

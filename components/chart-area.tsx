@@ -21,12 +21,12 @@ import {
 export const description = "A simple area chart"
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
+  { month: "Enero", desktop: 186, mobile: 80 },
+  { month: "Febrero", desktop: 305, mobile: 200 },
+  { month: "Marzo", desktop: 237, mobile: 120 },
+  { month: "Abril", desktop: 73, mobile: 190 },
+  { month: "Mayo", desktop: 209, mobile: 130 },
+  { month: "Junio", desktop: 214, mobile: 140 },
 ]
 
 const chartConfig = {
@@ -44,9 +44,9 @@ export function ChartArea() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Area Chart</CardTitle>
+        <CardTitle>Gráfico de Área</CardTitle>
         <CardDescription>
-          Showing total visitors for the last 6 months
+          Mostrando total de visitantes de los últimos 6 meses
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -94,10 +94,10 @@ export function ChartArea() {
         <div className="flex w-full items-start gap-2 text-sm">
           <div className="grid gap-2">
             <div className="flex items-center gap-2 font-medium leading-none">
-              Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+              Crecimiento del 5.2% este mes <TrendingUp className="h-4 w-4" />
             </div>
             <div className="flex items-center gap-2 leading-none text-muted-foreground">
-              January - June 2024
+              Enero - Junio 2024
             </div>
           </div>
         </div>
